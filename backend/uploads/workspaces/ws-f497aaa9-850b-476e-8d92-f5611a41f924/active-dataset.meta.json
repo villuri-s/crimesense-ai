@@ -1,0 +1,14 @@
+{
+  "id": "upload-1785047676155-1ec9a020",
+  "kind": "upload",
+  "label": "CrimeSenseAI_Realistic_Crime_Logs_300.xlsx",
+  "filename": "CrimeSenseAI_Realistic_Crime_Logs_300.xlsx",
+  "contentType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+  "uploadedAt": "2026-07-26T06:34:36.156Z",
+  "workspaceId": "ws-f497aaa9-850b-476e-8d92-f5611a41f924",
+  "storage": {
+    "provider": "azure_blob",
+    "container": "datasets",
+    "blobName": "ws-f497aaa9-850b-476e-8d92-f5611a41f924/2026-07-26/upload-1785047676155-1ec9a020-crimesenseai_realistic_crime_logs_300.xlsx"
+  }
+}

@@ -1,0 +1,320 @@
+/* CrimeSense AI Polish - Animations and Glassmorphism Effects */
+
+/* Glassmorphism Background Effect */
+.panel,
+.card,
+.sidebar-panel {
+  background-image: 
+    linear-gradient(135deg, rgba(59, 130, 246, 0.05), rgba(239, 68, 68, 0.02));
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Smooth Transitions */
+button,
+a,
+.nav-item,
+.kpi-card,
+.crime-marker {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Animated Gradient Background */
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.studio-hero {
+  background-size: 200% 200%;
+  animation: gradientShift 8s ease infinite;
+}
+
+/* Pulse Animation for Alert Elements */
+@keyframes alertPulse {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.7);
+  }
+  50% {
+    box-shadow: 0 0 0 12px rgba(239, 68, 68, 0);
+  }
+}
+
+.kpi-alert {
+  animation: alertPulse 2s infinite;
+}
+
+/* Fade in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.workspace-view {
+  animation: fadeIn 0.3s ease;
+}
+
+/* Scale animation on hover */
+@keyframes scaleUp {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.02);
+  }
+}
+
+.kpi-card:hover {
+  animation: scaleUp 0.3s ease-in-out;
+}
+
+/* Button hover glow effect */
+.primary-action,
+.secondary-action {
+  position: relative;
+  overflow: hidden;
+}
+
+.primary-action::before,
+.secondary-action::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s;
+}
+
+.primary-action:hover::before,
+.secondary-action:hover::before {
+  left: 100%;
+}
+
+/* Gradient Text Animation */
+@keyframes gradientFlow {
+  0% {
+    background-position: 0% center;
+  }
+  100% {
+    background-position: 200% center;
+  }
+}
+
+h1, h2, h3 {
+  background: linear-gradient(90deg, #60a5fa, #3b82f6, #60a5fa);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: gradientFlow 3s ease infinite;
+}
+
+/* Police Badge Animation */
+.workspace-sidebar-mark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.2), rgba(239, 68, 68, 0.1));
+  font-size: 1.5rem;
+  font-weight: 700;
+  border: 2px solid rgba(59, 130, 246, 0.3);
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+/* Status Badge Pulse */
+.run-status {
+  position: relative;
+  animation: statusPulse 2s ease-in-out infinite;
+}
+
+@keyframes statusPulse {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 0 6px rgba(34, 197, 94, 0);
+  }
+}
+
+/* Slide in animation for drawers */
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.slide-drawer {
+  animation: slideIn 0.3s ease-out;
+}
+
+/* Rotate animation for loading */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.workspace-loading-panel {
+  animation: spin 2s linear infinite;
+}
+
+/* Border glow effect */
+@keyframes borderGlow {
+  0%, 100% {
+    border-color: rgba(59, 130, 246, 0.2);
+    box-shadow: 0 0 10px rgba(59, 130, 246, 0.1);
+  }
+  50% {
+    border-color: rgba(59, 130, 246, 0.4);
+    box-shadow: 0 0 20px rgba(59, 130, 246, 0.2);
+  }
+}
+
+.connector-card.selected,
+.analysis-record-button.selected {
+  animation: borderGlow 2s ease-in-out infinite;
+}
+
+/* Success animation */
+@keyframes successBounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-10px);
+  }
+  75% {
+    transform: translateY(-5px);
+  }
+}
+
+.run-status.success {
+  animation: successBounce 0.6s ease-out;
+}
+
+/* Dark mode icon animation */
+.icon-button {
+  position: relative;
+}
+
+.icon-button:hover {
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.2), rgba(239, 68, 68, 0.1));
+}
+
+/* Shimmer effect on loading */
+@keyframes shimmer {
+  0% {
+    background-position: -1000px 0;
+  }
+  100% {
+    background-position: 1000px 0;
+  }
+}
+
+.loading-skeleton {
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 25%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.1) 75%);
+  background-size: 1000px 100%;
+  animation: shimmer 2s infinite;
+}
+
+/* Chart animation */
+@keyframes chartDraw {
+  from {
+    opacity: 0;
+    transform: scaleX(0);
+  }
+  to {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+}
+
+.analysis-chart-grid {
+  animation: chartDraw 0.5s ease-out;
+}
+
+/* Responsive animations */
+@media (max-width: 768px) {
+  .workspace-view {
+    animation: fadeIn 0.2s ease;
+  }
+
+  @keyframes slideInMobile {
+    from {
+      transform: translateY(100%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+
+  .panel {
+    animation: slideInMobile 0.2s ease-out;
+  }
+}
+
+/* Dark theme enhancements */
+body {
+  color-scheme: dark;
+}
+
+/* Neon glow for high-risk items */
+.kpi-card-high {
+  box-shadow: 
+    0 0 20px rgba(239, 68, 68, 0.3),
+    inset 0 1px 0 rgba(239, 68, 68, 0.1);
+}
+
+.kpi-card-high:hover {
+  box-shadow: 
+    0 0 40px rgba(239, 68, 68, 0.4),
+    inset 0 1px 0 rgba(239, 68, 68, 0.15);
+}
+
+/* Police command center styling */
+.top-nav {
+  background: linear-gradient(135deg, rgba(15, 20, 25, 0.8), rgba(20, 30, 48, 0.8));
+  border-top: 2px solid rgba(59, 130, 246, 0.2);
+  box-shadow: 0 4px 20px rgba(59, 130, 246, 0.1);
+}
+
+.sidebar {
+  background: linear-gradient(135deg, rgba(10, 15, 20, 0.9), rgba(15, 25, 40, 0.9));
+  box-shadow: 4px 0 30px rgba(15, 23, 42, 0.4);
+}

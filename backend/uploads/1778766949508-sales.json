@@ -1,0 +1,82 @@
+[
+  {
+    "date": "2026-01-01",
+    "region": "India",
+    "product": "Laptop",
+    "category": "Electronics",
+    "revenue": 1200,
+    "units_sold": 10,
+    "profit": 300,
+    "customer_type": "New"
+  },
+  {
+    "date": "2026-01-01",
+    "region": "US",
+    "product": "Mobile",
+    "category": "Electronics",
+    "revenue": 2000,
+    "units_sold": 25,
+    "profit": 600,
+    "customer_type": "Returning"
+  },
+  {
+    "date": "2026-01-02",
+    "region": "India",
+    "product": "Tablet",
+    "category": "Electronics",
+    "revenue": 900,
+    "units_sold": 8,
+    "profit": 200,
+    "customer_type": "Returning"
+  },
+  {
+    "date": "2026-01-02",
+    "region": "UK",
+    "product": "Headphones",
+    "category": "Accessories",
+    "revenue": 700,
+    "units_sold": 15,
+    "profit": 250,
+    "customer_type": "Returning"
+  },
+  {
+    "date": "2026-01-03",
+    "region": "India",
+    "product": "Laptop",
+    "category": "Electronics",
+    "revenue": 1500,
+    "units_sold": 12,
+    "profit": 400,
+    "customer_type": "Returning"
+  },
+  {
+    "date": "2026-01-03",
+    "region": "US",
+    "product": "Mobile",
+    "category": "Electronics",
+    "revenue": 2500,
+    "units_sold": 30,
+    "profit": 800,
+    "customer_type": "New"
+  },
+  {
+    "date": "2026-01-04",
+    "region": "UK",
+    "product": "Tablet",
+    "category": "Electronics",
+    "revenue": 1100,
+    "units_sold": 10,
+    "profit": 350,
+    "customer_type": "Returning"
+  },
+  {
+    "date": "2026-01-05",
+    "region": "India",
+    "product": "Headphones",
+    "category": "Accessories",
+    "revenue": 800,
+    "units_sold": 20,
+    "profit": 300,
+    "customer_type": "New"
+  }
+]

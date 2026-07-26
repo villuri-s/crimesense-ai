@@ -1,0 +1,2 @@
+window.__INSIGHTIQ_RUNTIME_CONFIG__ =
+  window.__INSIGHTIQ_RUNTIME_CONFIG__ || {};

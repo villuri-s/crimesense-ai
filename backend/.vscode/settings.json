@@ -1,0 +1,8 @@
+{
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}",
+        ".vscode{,/**}"
+    ],
+    "appService.defaultWebAppToDeploy": "/subscriptions/ef3ec399-5885-4d74-8d50-06730c0bcca3/resourceGroups/insightiqstorage1711/providers/Microsoft.Web/sites/insightiq-api-mani",
+    "appService.deploySubpath": "."
+}

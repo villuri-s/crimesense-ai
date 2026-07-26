@@ -1,0 +1,14 @@
+{
+  "id": "upload-1784619511002-459fb093",
+  "kind": "upload",
+  "label": "incidents.xlsx",
+  "filename": "incidents.xlsx",
+  "contentType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+  "uploadedAt": "2026-07-21T07:38:31.002Z",
+  "workspaceId": "ws-66527295-9428-487c-8d2e-bb3eb9fbfc71",
+  "storage": {
+    "provider": "azure_blob",
+    "container": "datasets",
+    "blobName": "ws-66527295-9428-487c-8d2e-bb3eb9fbfc71/2026-07-21/upload-1784619511002-459fb093-incidents.xlsx"
+  }
+}
