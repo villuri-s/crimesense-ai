@@ -9,7 +9,7 @@ CrimeSense AI is an intelligent crime analytics platform developed for the **Kar
 ## 🎥 Demo Video
 
 👉 **Watch the Project Demo:**  
-[https://YOUR-YOUTUBE-LINK](https://youtu.be/l1kVwf5ndWs)
+https://youtu.be/l1kVwf5ndWs
 
 ---
 
